@@ -1,0 +1,8 @@
+function removeDuplicates(arr) {
+    return arr.filter((value, index, self) => {
+        return self.indexOf(value) === index;
+    });
+}
+
+const numbers = [1, 2, 3, 3, 4, 5, 5, 6];
+console.log("Array with duplicates removed:", removeDuplicates(numbers));

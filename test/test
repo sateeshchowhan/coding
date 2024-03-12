@@ -1,0 +1,12 @@
+function maxNumber(arr){
+  let maxNumber = 0;
+  for (let i=1; i<arr.length;i++){
+    if (arr[i]>maxNumber){
+        maxNumber = arr[i];
+    }
+}    
+return maxNumber;
+}
+
+const numbers = [1, 4, 6, 7, 8, 10, 45]
+console.log(maxNumber(numbers));

@@ -1,0 +1,6 @@
+function reverseWords(sentence) {
+    return sentence.split(" ").map(word => word.split("").reverse().join("")).join(" ");
+}
+
+const sentence = "Hello world, how are you?";
+console.log("Reversed words:", reverseWords(sentence));
